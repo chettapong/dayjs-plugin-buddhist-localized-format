@@ -1,6 +1,6 @@
 {
   "name": "@chettapong/dayjs-plugin-buddhist-localized-format",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Day.js plugin combining Buddhist Era (B.E.) year conversion with LocalizedFormat tokens, with a per-call override option.",
   "keywords": [
     "dayjs",
