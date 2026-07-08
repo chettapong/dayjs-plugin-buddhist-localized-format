@@ -10,6 +10,13 @@
     "thai",
     "date"
   ],
+  "bugs": {
+    "url": "https://github.com/chettapong/dayjs-plugin-buddhist-localized-format/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chettapong/dayjs-plugin-buddhist-localized-format.git"
+  },
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",
