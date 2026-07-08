@@ -1,0 +1,55 @@
+{
+  "name": "@chettapong/dayjs-plugin-buddhist-localized-format",
+  "version": "1.0.0",
+  "description": "Day.js plugin combining Buddhist Era (B.E.) year conversion with LocalizedFormat tokens, with a per-call override option.",
+  "keywords": [
+    "dayjs",
+    "dayjs-plugin",
+    "buddhist-era",
+    "localized-format",
+    "thai",
+    "date"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepublishOnly": "bun run build",
+    "release": "bun run lint && bun run test && bun run build && bunx changelogen --release && bun publish && git push --follow-tags"
+  },
+  "peerDependencies": {
+    "dayjs": "^1.11.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "changelogen": "^0.6.2",
+    "dayjs": "^1.11.13",
+    "eslint": "^10.6.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.4",
+    "tsup": "^8.0.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.63.0",
+    "vitest": "^2.0.5"
+  }
+}
